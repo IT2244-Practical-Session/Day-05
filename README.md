@@ -19,13 +19,17 @@ ID,Name,age,salary,Department
 108,Hank,32,68000,Engineering
 109,Ivy,29,62000,Data Science
 110,Jack,31,71000,HR
+
 column -t pqr.csv
 cut -d ',' -f2 pqr.csv
 cut -d ',' -f4 pqr.csv
+
 Sort by salary (ascending):
 sort -t ',' -k4,4n pqr.csv
+
 ##Sort by age (descending):
 sort -t ',' -k3,3nr pqr.csv
+
 Sort by salary (descending):
 sort -t ',' -k4,4r pqr.csv
 
